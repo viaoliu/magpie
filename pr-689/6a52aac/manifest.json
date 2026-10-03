@@ -1,0 +1,54 @@
+{
+  "summary": "用量图表里点击某一天，现在按当前选择直接取反（响应还没回来时再点一次也能在同一时刻取消选中），重绘完成后把键盘焦点还给同一天；按天筛选的 CSV 下载与桌面导出文件名改为 magpie-requests-day-YYYY-MM-DD.csv，周期文件名与重名后缀不变。",
+  "scenes": [
+    {
+      "title": "用量页图表按天选择与再次点击",
+      "shots": [
+        {
+          "file": "01-usage-chart-days.png",
+          "caption": "「请求」页的图表与请求行，一天一列",
+          "width": 2560
+        },
+        {
+          "file": "02-usage-day-picked.png",
+          "caption": "点击一天后的图表与下方请求行",
+          "width": 2560
+        },
+        {
+          "file": "03-usage-day-cleared.png",
+          "caption": "再次点击同一天后的图表与下方请求行",
+          "width": 2560
+        }
+      ]
+    },
+    {
+      "title": "菜单栏面板里的用量图表",
+      "shots": [
+        {
+          "file": "04-panel-usage-chart.png",
+          "caption": "面板的用量图表",
+          "width": 2560
+        },
+        {
+          "file": "05-panel-day-picked.png",
+          "caption": "点击一天后的面板",
+          "width": 2560
+        },
+        {
+          "file": "06-panel-day-cleared.png",
+          "caption": "再次点击同一天后的面板",
+          "width": 2560
+        }
+      ]
+    }
+  ],
+  "video": "preview.mp4",
+  "poster": "poster.png",
+  "errors": [],
+  "leak": false,
+  "skipped": null,
+  "mismatch": "",
+  "unseen": "两个改动的关键部分都取决于时机，录制里难以稳定复现：第一次响应返回前对同一日期连点两次才能看出「取反」与「以渲染状态取反」的区别，而点击之间必然有间隔、沙盒响应很快；重绘后焦点是否被抢走也只能靠键盘焦点圈体现，页面上没有稳定的可见差异。CSV 文件名只出现在浏览器下载项或 ~/Downloads 里，不在这些页面中，也拿不到给定的下载/导出按钮来一键触发，所以只能看出图表与请求明细的按天筛选效果。",
+  "interactive": true,
+  "pages": 2
+}

@@ -1,0 +1,17 @@
+<!doctype html><html lang="zh"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>#689 界面预览 · 6a52aac</title>
+<style>:root{color-scheme:light dark;--bg:#f6f6f7;--fg:#1d1d1f;--muted:#6e6e73;--card:#fff;--line:#e5e5ea}
+@media (prefers-color-scheme:dark){:root{--bg:#111113;--fg:#f2f2f4;--muted:#9a9aa0;--card:#1c1c1f;--line:#2c2c30}}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.6 -apple-system,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif}
+main{max-width:1100px;margin:0 auto;padding:28px 16px 60px}h1{font-size:20px;margin:0 0 4px}.m{color:var(--muted);font-size:13px;margin:0 0 20px}
+video,img{display:block;width:100%;border-radius:10px;border:1px solid var(--line);background:var(--card)}figure{margin:0 0 28px}figcaption{color:var(--muted);font-size:13px;margin-top:8px}
+a{color:inherit}</style>
+<main><h1>#689 界面预览</h1><p class="m">commit 6a52aac · <a href="https://github.com/yetone/magpie/pull/689">回到 PR</a> · 用量图表里点击某一天，现在按当前选择直接取反（响应还没回来时再点一次也能在同一时刻取消选中），重绘完成后把键盘焦点还给同一天；按天筛选的 CSV 下载与桌面导出文件名改为 magpie-requests-day-YYYY-MM-DD.csv，周期文件名与重名后缀不变。</p>
+<figure><video src="preview.mp4" controls autoplay muted playsinline poster="poster.png"></video><figcaption>红线是鼠标走过的轨迹，红色圆环是一次点击；底部文字是这一步在做什么。空格暂停，← → 逐段查看。</figcaption></figure>
+<figure><img src="01-usage-chart-days.png" alt="「请求」页的图表与请求行，一天一列"><figcaption>用量页图表按天选择与再次点击 · 「请求」页的图表与请求行，一天一列</figcaption></figure>
+<figure><img src="02-usage-day-picked.png" alt="点击一天后的图表与下方请求行"><figcaption>用量页图表按天选择与再次点击 · 点击一天后的图表与下方请求行</figcaption></figure>
+<figure><img src="03-usage-day-cleared.png" alt="再次点击同一天后的图表与下方请求行"><figcaption>用量页图表按天选择与再次点击 · 再次点击同一天后的图表与下方请求行</figcaption></figure>
+<figure><img src="04-panel-usage-chart.png" alt="面板的用量图表"><figcaption>菜单栏面板里的用量图表 · 面板的用量图表</figcaption></figure>
+<figure><img src="05-panel-day-picked.png" alt="点击一天后的面板"><figcaption>菜单栏面板里的用量图表 · 点击一天后的面板</figcaption></figure>
+<figure><img src="06-panel-day-cleared.png" alt="再次点击同一天后的面板"><figcaption>菜单栏面板里的用量图表 · 再次点击同一天后的面板</figcaption></figure>
+</main></html>

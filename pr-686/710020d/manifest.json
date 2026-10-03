@@ -1,0 +1,39 @@
+{
+  "summary": "这个 PR 让「标为能联网搜索」的中转站可以手动指定为代搜供应商：它开始出现在设置里代搜供应商的选择列表中（但 magpie 自动挑选时仍会跳过它）。同时把两处说明文字改成「不会被自动选择／可以手动指定」，一处是设置里代搜供应商一行的提示，一处是供应商编辑器里「联网搜索」一行的说明。",
+  "scenes": [
+    {
+      "title": "代搜供应商的选择列表",
+      "shots": [
+        {
+          "file": "01-searcher-row.png",
+          "caption": "代搜供应商一行：没有手动指定时的样子",
+          "width": 2560
+        },
+        {
+          "file": "02-searcher-choices.png",
+          "caption": "选择列表里列出了哪些可以被指定",
+          "width": 2560
+        }
+      ]
+    },
+    {
+      "title": "供应商编辑器里的联网搜索",
+      "shots": [
+        {
+          "file": "03-provider-editor.png",
+          "caption": "DeepSeek 的编辑器",
+          "width": 2560
+        }
+      ]
+    }
+  ],
+  "video": "preview.mp4",
+  "poster": "poster.png",
+  "errors": [],
+  "leak": false,
+  "skipped": null,
+  "mismatch": "",
+  "unseen": "沙盒里只有 DeepSeek 一个供应商，也没有任何标为「自己能联网搜索」的中转站，所以选择列表里不会出现中转站项，「标为能搜索的中转站（…）不会被自动选择」这句提示和供应商编辑器里「联网搜索」一行新的说明文字都不会出现——它们都要有这样一个中转站才会显示。",
+  "interactive": true,
+  "pages": 3
+}
